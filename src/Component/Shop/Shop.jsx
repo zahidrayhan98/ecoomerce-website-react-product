@@ -9,9 +9,9 @@ const Shop = () => {
     const [cart,setCart]=useState([])
     const handleToCart=(product)=>{
        const newCart=[...cart , product]
-       setCart(newCart)
+       setCart(newCart) 
        addToDb(product.id)
-    }
+    } 
   
     useEffect(() => {
         fetch('products.json')
